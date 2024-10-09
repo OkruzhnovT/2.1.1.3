@@ -58,6 +58,10 @@ public class User {
         return age;
     }
 
+    public void setAge(Byte age) {
+        this.age = age;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -71,9 +75,6 @@ public class User {
         return Objects.hash(getId(), getName(), getLastName(), getAge());
     }
 
-    public void setAge(Byte age) {
-        this.age = age;
-    }
 
     @Override
     public String toString() {

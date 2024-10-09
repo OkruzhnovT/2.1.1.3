@@ -10,9 +10,8 @@ public class Util {
     private static final String URL = "jdbc:mysql://localhost:3306/kata3";
     private static final String USERNAME = "root";
     private static final String PASWORD = "root";
-
+    private static Connection connection = null;
     public static Connection getConnection() {
-        Connection connection = null;
         try {
             connection = DriverManager.getConnection(
                     URL,

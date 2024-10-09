@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceImpl extends UserDaoJDBCImpl implements UserService {
-    UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
+    private static final UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
 
     @Override
     public void createUsersTable() {
